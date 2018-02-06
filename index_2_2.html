@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <link rel="shortcut icon" type="image/png" href="img/nlogo5.png">
+    <link rel="shortcut icon" type="image/png" href="img/login.png">
+  <meta charset="utf-8" />
+  <title>MyKlinic<img src="img/nlogo5.png"></title>
+  <meta name="description" content="Angularjs, Html5, Music, Landing, 4 in 1 ui kits package" />
+  <meta name="keywords" content="AngularJS, angular, bootstrap, admin, dashboard, panel, app, charts, components,flat, responsive, layout, kit, ui, route, web, app, widgets" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />
+
+<style>
+/* BOOTSTRAP 3.x GLOBAL STYLES
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 1;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item
+{
+  height: 500px;
+  background-color:#555;
+}
+.carousel img {
+  position: absolute;
+  top: 80px;
+  bottom:10px
+  left: 0;
+  min-height: 600px;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+ /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+}
+    </style>
+</head>
+<body>
+	
+  <!-- header -->
+  
+  <!-- header -->
+  <header id="header" class="navbar navbar-fixed-top bg-dark padder-v"  data-spy="affix" data-offset-top="1">
+    <div class="container">
+      <div class="navbar-header">
+        <button class="btn btn-link visible-xs pull-right m-r" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-bars"></i>
+        </button>
+        <a href="#" class="navbar-brand m-r-lg"><img src="img/logo.png" class="m-r-sm hide"><span class="h3 font-bold">MyKlinic</span></a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav font-bold">
+          <li>
+            <a href="#myCarousel" data-ride="scroll">Home</a>
+          </li>
+          <li>
+            <a href="#what" data-ride="scroll">Servicing</a>
+          </li>
+          <li>
+            <a href="#doctors" data-ride="scroll">Pricing</a>
+          </li>
+          <li>
+            <a href="#app" data-ride="scroll">Download</a>
+          </li>
+            <li>
+            <a href="#features" data-ride="scroll">About Us</a>
+          </li>
+             <li>
+            <a href="#reach" data-ride="scroll">Reach Us</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="m-t-sm">
+               <a href="#" class="btn btn-sm btn-success btn-rounded m-l">Sign UP</a>
+            </div>
+          </li>
+        </ul>   
+           <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="m-t-sm">
+               <li class = "dropdown">
+    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+						<div class="dropdown-menu" style="padding: 15px; padding-bottom: 10px;">
+							<form method="post" action="login" accept-charset="UTF-8">
+								<input style="margin-bottom: 20px;" type="text" placeholder="Username" id="username" name="username">
+								<input style="margin-bottom: 20px;" type="password" placeholder="Password" id="password" name="password">
+								<input style="float: left; margin-right: 10px;" type="checkbox" name="remember-me" id="remember-me" value="1">
+								<label class="string optional" for="user_remember_me"> Remember me</label>
+								<input class="btn btn-primary btn-block" type="submit" id="sign-in" value="Sign In">
+								<label style="text-align:center;margin-top:5px">or</label>
+                                <input class="btn btn-primary btn-block" type="button" id="sign-in-google" value="Sign In with Google">
+								<input class="btn btn-primary btn-block" type="button" id="sign-in-twitter" value="Sign In with Yahoo">
+							</form>
+						</div>
+      </li>
+            </div>
+          </li>
+        </ul>   
+      </div>
+    </div>
+     
+  </header>
+  <!-- / header -->
+    <!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+    <p>My Klinic </p>
+      <img src="img/slide1.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption"> <span class="text-black block m-b-md m-t">Using AngularJS with angular ui. including angular bootstrap directives and other modules.</span>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/slider2_2.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+            <span class="text-black block m-b-md m-t">Using AngularJS with angular ui. including angular bootstrap directives and other modules.</span>
+         </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="img/parallax123.jpg" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+            <span class="text-white-only text:center block m-b-md m-t">Management Information Systems
+Assignment Questions
+
+1)	With a neat diagram, explain the components of an organizational planning?
+2)	What is SWOT analysis? Briefly explain.
+3)	Compare prototyping approach with life cycle approach.
+4)	Define strategic planning. Explain the different types of strategies.
+5)	Write short notes on tools of planning.
+6)	Define re-engineering by Michael hammer. Explain re-engineering opportunities in BPR.
+7)	Discuss in detail the Value Stream Model of Organization.
+8)	Write in detail about evaluation and feasibility of IT solutions.
+9)	Describe the different methods of determining the information requirements.
+
+Using AngularJS with angular ui. including angular bootstrap directives and other modules.</span>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+<!-- /.carousel -->
+ <div class="bg-light">
+<div id="what" class="container m-b-sm padder-v">
+      <div class="row no-gutter">
+        <div class="col-md-3 col-sm-6">
+          <div class="bg-info m-r-n-md no-m-xs no-m-sm">
+            <a href="../angular" class="wrapper-xl block">
+              <span class="h3 m-t-sm text-black">24 hour Service</span>
+              <span class="block m-b-md m-t">Using AngularJS with angular ui. including angular bootstrap directives and other modules.</span>
+              <i class="icon-arrow-right text-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="bg-white-only dker m-t-xl m-l-n-md m-r-n-md text-white no-m-xs no-m-sm">
+            <a href="../html" class="wrapper-xl block">
+              <span class="h3 m-t-sm text-black">Health Care Solutions</span>
+              <span class="block m-b-md m-t">Angulr also provide html version for app does not use angular. using jQuery and html5 to build user freindly app.</span>
+              <i class="icon-arrow-right text-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="bg-info m-r-n-md no-m-xs no-m-sm">
+            <a href="../angular" class="wrapper-xl block">
+              <span class="h3 m-t-sm text-black">Advanced</span>
+              <span class="block m-b-md m-t">Using AngularJS with angular ui. including angular bootstrap directives and other modules.</span>
+              <i class="icon-arrow-right text-lg"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+           <div class="bg-white-only dker m-t-xl m-l-n-md m-r-n-md text-white no-m-xs no-m-sm">
+            <a href="#" class="wrapper-xl block">
+              <span class="h3 m-t-sm text-black">Opening Hours</span>
+              <span class="block m-b-md m-t">
+                  <ul>
+                        Monday - Friday <span class="b-b b-2x">8.00 -18.00</span><br>
+                        <span class="h5 m-t-sm text-black">Only For Special Appointments</span></br>
+                        Saturday <span class="b-b b-2x">8.00  - 12.00</span><br>
+                        Sunday <span class="b-b b-2x">8.00 - 10.00</span>
+                        </ul>
+                </span>
+              <i class="icon-arrow-right text-lg"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <div id="doctors" class="row m-t-xl m-b-xl text-center">
+          <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+            <img src="img/timer.png">
+             <h4 class="m-t-none">24X7 SERVICES</h4>
+              <p class="text-muted m-t-lg" ><p>AngularJS is the most popular </p><p>JavaScript framework created by Google! </p><p>If you're looking for a </p><p>Angular is your choice!</p>
+           
+          </div>
+          <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="600">
+           <img src="img/tool.png">
+            <div class="m-b-xl">
+              <h4 class="m-t-none">CARE ADVICES</h4>
+              <p class="text-muted m-t-lg" A complete solution for rapid front-end development</p><p>No other plugins or frameworks are </p><p>necessary to build a data-driven web application</p>
+            </div>
+          </div>
+          
+          <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="900">
+           <img src="img/inject.png">
+            <div class="m-b-xl">
+              <h4 class="m-t-none">EMERGENCY</h4>
+              <p class="text-muted m-t-lg"><p>Getting started with AngularJS </p><p>is incredibly easy. ou can have a simple </p><p>Angular app up in minutes!</p>
+            </div>
+            </div>
+         <div class="col-sm-3" data-ride="animated" data-animation="fadeInLeft" data-delay="1200">
+            <img src="img/contact.jpg">
+             <h4 class="m-t-none">CONTACT US</h4>
+              <p class="text-muted m-t-lg" ><p>AngularJS is the most popular </p><p>JavaScript framework created by Google! </p><p>If you're looking for a </p><p>Angular is your choice!</p>
+           </div>
+          </div>
+       </div>
+        <div class="bg-info">
+      <div class="container">
+        <div class="row m-t-sm m-b-sm">
+          <div class="col-sm-6 wrapper-xl">
+            <h3 class="text-black font-bold m-b-lg">Responsive on all screen</h3>
+            <p class="h4 l-h-1x">Angulr responsive CSS layout is built on Bootstrap Grid System, includes a responsive, mobile first fluid grid system to target a wide range of devices like desktop, tablets, smart phones etc</p>
+          </div>
+          <div class="col-sm-6" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+              <div class="m-l-sm inline">
+             <div class="section">
+                 <img id="s3" src="img/da.png" class="img-responsive" height="300" width="600" ></a>
+            </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="features" class="bg-white-only">
+      <div class="container">
+        <div class="row m-t-sm m-b-sm">
+          <div class="col-sm-6" data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+              <div class="m-t-xxl">
+                <div class="m-b">
+                  <div class="m-l-sm inline">
+                    <div class="section">
+                        <img id="s3" src="img/img1.png" ></a>
+                        <img id="s3" src="img/img3_2.png" ></a>                        
+                    </div>
+                  </div>
+                </div>
+                </div>
+          </div>
+          <div class="col-sm-6 wrapper-xl">
+            <h3 class="text-info font-bold m-b-lg">Why Choose Us!!!</h3>
+            <ul class="list-unstyled  m-t-xl">
+                          <li data-ride="animated" data-animation="fadeInUp" data-delay="600">
+                    <div class="pos-rlt wrapper bg-info r r-2x">
+                      <span class="arrow left pull-up arrow-info"></span>
+                        <p class="m-b-none"><strong>Qualified Doctors</strong></p>
+                        
+                    </div>
+                Angulr's CSS is built on Less, a preprocessor with additional functionality like variables, mixins, and functions for compiling CSS. </p>
+              </li>
+              <li data-ride="animated" data-animation="fadeInUp" data-delay="900">
+                <i class=" pull-left text-lg m-r m-t-sm"></i>
+                        <div class="pos-rlt wrapper bg-dark b-light r r-2x">
+                      <span class="arrow left pull-up  arrow-dark"></span>
+                            
+                            <p class="m-b-none"><strong>Emergency Departments</strong></p>
+                    </div>
+                 Angulr using Grunt to automate development tasks, like compiling less to css, concatenating and minifying js files...</p>
+              </li>
+              <li data-ride="animated" data-animation="fadeInUp" data-delay="1200">
+                <i class="icon-check pull-left text-lg m-r m-t-sm"></i>
+                <div class="pos-rlt wrapper bg-info r r-2x">
+                      <span class="arrow left pull-up arrow-info"></span>
+                    <p class="m-b-none"><strong>Great Infrastructure</strong></p>
+                    </div>
+                    fetching and installing packages from all over, finding, downloading, and saving the stuff you’re looking for.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> 
+<div class="bg-light">
+      <div class="container">
+        <div class="row m-t-xl m-b-xl">
+            <p class="h4 l-h-1x">
+                <ul class="list-inline" class="h4 l-h-1x">
+             <div class="col-sm-3">
+            <h4 class="text-u-c m-b"><span class="h3 font-bold">&nbsp;&nbsp;&nbsp;&nbsp;250</span></h4>
+            <span class="h3 font-bold">Doctors</span>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b"><span class="h3 font-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;300</span></h4>
+            <span class="h3 font-bold">Klinic Rooms</span>
+             </div>
+          <div class="col-sm-3">
+           <h4 class="text-u-c m-b"><span class="h3 font-bold" >&nbsp;&nbsp;&nbsp;&nbsp;350</span></h4>
+            <span class="h3 font-bold">Awards</span>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b"><span class="h3 font-bold">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4000</span></h4>
+            <span class="h3 font-bold">Happy patients</span>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+   <!-- footer -->
+  <footer id="footer">
+     <div id="app" class="bg-info">
+      <div class="container">
+          <div class="row m-t-sm m-b-y">
+          <div class="col-sm-6"  data-ride="animated" data-animation="fadeInLeft" data-delay="300">
+            <div class="text-center">
+              <p>
+              <a href="http://themeforest.net/user/Flatfull/portfolio?ref=flatfull" target="_blank" class="text-sm btn btn-lg btn-rounded btn-default m-sm">
+                <i class="fa fa-apple fa-3x pull-left m-l-xl"></i>
+                <span class="block clear m-t-xs text-left m-r m-l">Available on the <b class="text-lg block font-bold">App Store</b>
+                </span>
+              </a>
+              </p>
+              <p>
+              <a href="index.html" target="_blank" class="text-sm btn btn-lg btn-rounded btn-default m-sm">
+                <i class="fa fa-android fa-3x pull-left m-l-sm"></i>
+                <span class="block clear m-t-xs text-left m-r m-l">Get it on <b class="text-lg block font-bold">Google Play</b>
+                </span>
+              </a>
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 wrapper-xl">
+            <h3 class="text-white-only font-bold m-b-lg">Smarter Healthcare On The Go</h3>
+            <p class="h4 l-h-1x">Book appointments with and get virtual care from top doctors. Anytime. Anywhere:</p>
+          </div>
+      </div>
+    </div>
+  
+    </div>
+    <div id="reach" class="bg-white">
+      <div class="container">
+        <div class="row m-t-xl m-b-xl">
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold">DEPARTMENTS</span></h4>
+            <ul class="list-unstyled">
+              <li><a href="../angular"><i class="fa fa-angle-right m-r-sm"></i>Primary Health Care</a></li>
+              <li><a href="../html"><i class="fa fa-angle-right m-r-sm"></i>Ophthalmology Clinic</a></li>
+              <li><a href="../angular/#music/home"><i class="fa fa-angle-right m-r-sm"></i>Outpatient Surgery</a></li>
+              <li><a href="#"><i class="fa fa-angle-right m-r-sm"></i>Cardiac Clinic</a></li>
+                <li><a href="#"><i class="fa fa-angle-right m-r-sm"></i>EMERGENCY</a></li>
+            </ul>
+            <p class="m-b-xl">More coming...</p>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold">Find</span> Us</h4>
+            <p class="text-sm">23 soe Midlokls <br>
+              120002 Loki — UNITED KINGDOM <br>
+              +333 432 321 322
+             </p>
+             <p>Sale: <a href="mailto:hey@example.com">info@example.com</a></p>
+             <p class="m-b-xl">Job: <a href="mailto:hey@example.com">job@example.com</a></p>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b-xl font-thin"><span class="b-b b-dark font-bold">Follow</span> Us</h4>
+            <div class="m-b-xl">
+              <a href="#" class="btn btn-icon btn-rounded btn-dark"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="btn btn-icon btn-rounded btn-dark"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="btn btn-icon btn-rounded btn-dark"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="btn btn-icon btn-rounded btn-dark"><i class="fa fa-linkedin"></i></a>
+              <a href="#" class="btn btn-icon btn-rounded btn-dark"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="text-u-c m-b font-thin"><span class="b-b b-dark font-bold">News</span> Letter</h4>
+            <p>Do not want to miss anything? Subscribe to our newsletter box</p>
+            <form class="form-inline m-t m-b text-center m-b-xl">
+              <div class="aside-xl inline">
+                <div class="input-group">
+                    <input type="text" id="address" name="address" class="form-control btn-rounded" placeholder="Your email">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default btn-rounded" type="submit">Subscribe</button>
+                    </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light dk">
+      <div class="container">
+        <div class="row padder-v m-t">
+          <div class="col-xs-5 text-left">
+            <ul class="list-inline" class="h4 l-h-1x">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Emergency</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Staff</a></li>
+            </ul> 
+          </div>
+          <div class="col-xs-4 text-right">
+        MyKlinic &copy; 2015
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- / footer -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jquery.appear.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

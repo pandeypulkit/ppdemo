@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Transparent Background Demo</title>
+    </head>
+ 
+    <body>
+        <div id="wrapper">
+            <style> 
+                #wrapper 
+                {
+    width:70%;
+    padding:50px;
+    color:#ff0000; /* black */
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:25px;
+    background:rgb(255, 255, 255); /* FALL BACK COLOR if user's browser isn't compatible with rgba */
+    background:rgba(255, 255, 255, 0.5); /* rgba is what makes the wrapper transparent with a white color, without affecting the text transparency.
+                                            The value "0.5" makes the element transparent, whereas "1" would make the element non-transparent, and "0"
+                                            would make the element completely transparent. rgba IS NOT COMPATIBLE with all browsers. */
+    height:300px; /* DEMONSTRATION PURPOSES. You typically don't want to pre-set the height of any element that would
+                     contain content. */
+    font-size:45px; /* DEMONSTRATION PURPOSES */
+                    color: black;
+  
+}
+ 
+body {
+    background-image: url("img/dashboard.png"); /* Uploads image into body element */
+    opacity: 1;
+    filter: Alpha(opacity=50); /* IE8 and earlier */
+}
+</style>
+</head>
+<body>
+
+<div>This element's opacity is 0.5! Note that both the text and the background-color are affected by the opacity level!</div>
+</div>
+</body>
+</html>
+
+
